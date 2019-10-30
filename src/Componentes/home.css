@@ -1,9 +1,0 @@
-body{
-    margin: 0;
-    display: grid;
-    grid-template-areas: 'nav nav nav nav'
-                         'aside aside aside aside'
-                         'section section section section'
-                         'footer footer footer footer';
-    grid-template-rows: 30vh 20vh 60vh 40vh;
-}
