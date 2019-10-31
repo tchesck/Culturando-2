@@ -1,12 +1,16 @@
 import React from 'react';
-import { BrowserRouter} from 'react-router-dom';
-import './App.scss';
-import Nav from './Componentes/Home/nav/nav'
+import { BrowserRouter, Route } from 'react-router-dom';
+import Navbar from './componentes/Navbar';
+import Home from './componentes/Home';
+import Cadastro from './componentes/Cadastro/Cadastro';
+import './componentes/Fonte.css'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Nav/>
+      <Navbar />
+      <Route exact path="/" component={Home} />
+      <Route path="/cadastro" component={Cadastro} />
     </BrowserRouter>
   )
 }
