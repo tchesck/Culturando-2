@@ -22,6 +22,8 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <nav>
+        <div id="nome"><p>caieiras  cultere</p></div>
+        
         <div onClick={abrirMenu} id="menu-hamburguer">
           <span></span>
           <span></span>
