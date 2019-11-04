@@ -1,0 +1,18 @@
+.CursosD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }  
+    p{
+        width: 58%;
+        text-align: center; 
+        margin-top: -6px;
+        
+    }
+}

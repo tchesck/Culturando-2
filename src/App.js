@@ -1,24 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Navbar from './componentes/Navbar';
-import Home from './componentes/Home';
-import Cadastro from './componentes/Cadastro/Cadastro';
-import './componentes/Fonte.css'
 import { BrowserRouter} from 'react-router-dom';
-import './App.scss';
-import ContainerCursos from './componentes/ContainerCursos/ContainerCursos';
+import Navbar from './componentes/Nav/Navbar.js';
+import Home from './componentes/Home/Home.js';
+import Section from './componentes/Section/Section.js';
 
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Route exact path="/" component={Home} />
-      <Route path="/cadastro" component={Cadastro} />
-      <ContainerCursos />
-      <ContainerCursos />
-      <ContainerCursos />
-      <ContainerCursos />
+      <Home />
+      <Section />
+      
     </BrowserRouter>
   )
 }

@@ -3,41 +3,46 @@
   nav {
     width: 100%;
     height: 70px;
-    background-color:#263025;
+    background: linear-gradient(to right,#6d1345,#7e154f 20%, #df5442 );
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 3px solid #352c2c;
-    #nome{
-      display: flex;
-      margin-right: 50px;
+    #nome img{
+      width: 160px;
+      height: 50px;
+      margin-top: 5px;
+      margin-left: 19px;
+      
     }
     #menu-hamburguer {
-
-      width: 50px;
+      margin-right: 60px;
+      width: 40px;
       height: 40%;
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: column;
+
       span {
         width: 100%;
-        height: 5px;
+        height: 15px;
         background-color: white;
         border-radius: 20px;
-        margin-left: 100px;
+        margin-left: 90px;
+        margin-top: 5px;  
       }
     }
   }
   .menu {
     font-family: 'Stoke', serif;
-    width: 200px;
+    width: 100%;
     height: 400px;
-    background-color:#a52a2ae5;
+    background-color:#7e154fc9;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transform: translateX(5000px);
+    transform: translateX(-500px);
     transition: 0.5s;
     position: absolute;
     top: 70px;
