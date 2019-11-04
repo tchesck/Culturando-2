@@ -8,6 +8,7 @@ const CursosD = ({img, titulo, texto }) => {
         <img src={img} alt=""/>
         <h2>{titulo}</h2>
         <p>{texto}</p>
+        <button>INSCREVA-SE</button>
 
         </div>
     )
