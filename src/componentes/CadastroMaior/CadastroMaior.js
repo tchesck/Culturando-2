@@ -113,7 +113,7 @@ const CadastroMaior = () => {
           atualizarState={setSenha}
           obrigatorio
         />
-      <input className="input" type="submit" value={"Cadastrar"} />
+      <input className="cadastro" type="submit" value={"Cadastrar"} />
       </form>
     </div>
     );
