@@ -30,9 +30,9 @@ const Navbar = () => {
       </nav>
       <section className={`menu ${menuAtivo ? "ativo" : ""}`}>
         <Link onClick={fecharMenu} to="/">Home</Link>
-        <Link onClick={fecharMenu} to="/pagamento">Cursos</Link>
-        <Link onClick={fecharMenu} to="/carrinho">Sobre</Link>
-        <Link onClick={fecharMenu} to="/produtos">Cadastro</Link>
+        <Link onClick={fecharMenu} to="/Cursos">Cursos</Link>
+        <Link onClick={fecharMenu} to="/Sobre-nós">Sobre nós</Link>
+        <Link onClick={fecharMenu} to="/cadastro">Cadastro</Link>
       </section>
     </div>
   );

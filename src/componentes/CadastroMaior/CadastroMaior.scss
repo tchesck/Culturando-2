@@ -3,16 +3,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #471521;
+    color: white;
+    background: linear-gradient(to right,#e996bf,#dd9ee4 20%, #f58a7c );
     .Texto{
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-top: 63px;
     }
   form {
-    margin-left: 50px; 
-  .LALA{
+    margin-left: 15px; 
+  .input{
       border: none;
       width: 220px;
       height: 30px;
