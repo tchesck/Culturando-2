@@ -1,9 +1,9 @@
 import React from 'react';
 import './Section.scss';
 import CursosD from '../CursosD/CursosD';
-import bale from '../imagem/balé.png'
-import teatro from '../imagem/teatro.png'
-import canto from '../imagem/canto.jpg'
+import bale from '../../imagem/balé.png';
+import teatro from '../../imagem/teatro.png';
+import canto from '../../imagem/canto.jpg';
 
 
 const Section = () => {

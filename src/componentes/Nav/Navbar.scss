@@ -1,13 +1,14 @@
 
 .Navbar {
   nav {
+    position: fixed;
     width: 100%;
     height: 70px;
     background: linear-gradient(to right,#6d1345,#7e154f 20%, #df5442 );
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 3px solid #352c2c;
+    
     #nome img{
       width: 215px;
       height: 50px;
@@ -42,25 +43,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transform: translateX(-500px);
+    transform: translateX(-700px);
     transition: 0.5s;
     position: absolute;
     top: 70px;
     left: 0;
     margin-left:130px;
-    border-top: 3px solid #263025;
     a {
       font-family: 'Stoke', serif;
       color: white;
+      font-weight: 500;
       text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    a:hover {
-      text-decoration: underline;
-      font-size: 25px;
-    }
+
   }
   .ativo {
     transform: translateX(0);

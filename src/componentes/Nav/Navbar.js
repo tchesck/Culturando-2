@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="Navbar">
       <nav>
         <div id="nome">
-          <img src={Culturando} />
+          <img src={Culturando} alt="Nome do projeto" />
         </div>
         
         <div onClick={abrirMenu} id="menu-hamburguer">
