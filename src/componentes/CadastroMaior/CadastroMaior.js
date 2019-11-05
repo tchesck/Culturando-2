@@ -4,8 +4,49 @@ import Input from "../Input/Input";
 import "./CadastroMaior.scss";
 
 const CadastroMaior = () => {
- 
+  const [nome, setNome] = useState("");
+  const [idade, setIdade] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [cep, setCep] = useState("");
+  const [contato, setContato] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
 
+  const salvarMaiorDeDezoito = (event) => {
+    event.preventDefault();
+
+    fetch('http://127.0.0.1:8000/responsavel/', {
+      method: 'POST',
+      body: JSON.stringify({
+        nome_completo: nome,
+        idade: idade,
+        cpf: cpf,
+        cep: cep,
+        contato: contato,
+        email: email,
+        senha: senha,
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+        }
+    }).then( value => {
+      return value.json()
+    }).then(value => {
+      if(value.id) {
+        alert('Cadastrado com sucesso!');
+        
+      } else{
+        alert('Erro ao cadastrar!')
+      }
+      setNome("");
+      setIdade("");
+      setCpf("");
+      setCep("");
+      setContato("");
+      setEmail("");
+      setSenha("");
+    })
+  };
 
   return (
     <div className="CadastroMaior">
