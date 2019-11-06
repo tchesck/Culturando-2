@@ -8,13 +8,14 @@ const Aside = () => {
         <div className="Tudo">
             <h1>Selecione:</h1>
             <div className="Icons">
-                
+
                 <div className="boy">
-                    <img src={boy} alt="Menino"></img>
-                    <h3>Criança</h3>
+                    <a href=""><img src={boy} alt="Menino"></img></a>
+                    <h3>Menor de idade</h3>
                 </div>
                 <div className="man">
-                    <img src={man} alt="Homem"></img>
+                <a href="http://localhost:3006/cadastro-maior"><img src={man} alt="Homem"></img></a>
+                    <h3>Maior de idade</h3>
                 </div>
 
             </div>
