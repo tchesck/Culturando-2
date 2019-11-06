@@ -2,6 +2,7 @@ import React from 'react';
 import './Aside.scss';
 import boy from '../../imagem/boy.png';
 import man from '../../imagem/man.png';
+import {Link} from 'react-router-dom';
 
 const Aside = () => {
     return (
@@ -10,11 +11,12 @@ const Aside = () => {
             <div className="Icons">
 
                 <div className="boy">
-                    <a href=""><img src={boy} alt="Menino"></img></a>
+                <Link to="/cadastro-menor"> <img src={boy} alt="Menino"></img></Link>
                     <h3>Menor de idade</h3>
                 </div>
                 <div className="man">
-                <a href="http://localhost:3006/cadastro-maior"><img src={man} alt="Homem"></img></a>
+                <Link to="/cadastro-maior"> <img src={man} alt="Homem"></img></Link> 
+                
                     <h3>Maior de idade</h3>
                 </div>
 
