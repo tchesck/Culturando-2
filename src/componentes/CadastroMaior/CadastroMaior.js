@@ -34,6 +34,7 @@ const CadastroMaior = () => {
     }).then(value => {
       if(value.id) {
         alert('Cadastrado com sucesso!');
+        window.open("http://localhost:3006/Cursos")
         
       } else{
         alert('Erro ao cadastrar!')

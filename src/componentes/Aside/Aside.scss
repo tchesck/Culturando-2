@@ -1,0 +1,22 @@
+.Tudo{
+    justify-content: center;
+    flex-direction: column;
+    display:flex;
+    .Icons{
+        display: flex;
+        justify-content: space-around;
+        width: 320px;
+        height: 100px;
+        background-color: aqua;
+        align-items: center;
+    }
+    .boy{
+        display: flex;
+        flex-direction: column;
+        h3{
+            margin-top: 5px;
+        }
+    }
+       
+    
+}
